@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 320px;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    cursor: default;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    
+}
+
+button {
+    background-color: #f9f9f9;
+    border: none;
+    font-size: 1.5em;
+    padding: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #d0d0d0;
+    transform: scale(1);
+}
+
+button.operator {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+button.operator:hover {
+    background-color: #e08900;
+}
+
+button.operator:active {
+    background-color: #cc7a00;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.calculator {
+    animation: fadeIn 1s ease-in-out;
+}
+/* Add responsive design for mobile devices */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .buttons {
+        gap: 2px;
+    }
+
+    button {
+        padding: 25px;
+        
+        font-size: 1.8em;
+        touch-action: manipulation;
+       
+    }
+
+    .display {
+        font-size: 2.5em;
+        padding: 25px;
+    }
+
+  
+
+
+
+button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    color:black
+}
+
+
+.display {
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+}
