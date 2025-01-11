@@ -12,6 +12,7 @@
     <div class="container calculator">
         <input  type = "text" id="display" class="display" readonly>
         <div id="operations" class="buttons">
+            <button class="operator" onclick="addNumber('+')">+</button>
             <button onclick="addNumber(7)">7</button>
             <button onclick="addNumber(8)">8</button>
             <button onclick="addNumber(9)">9</button>
@@ -23,7 +24,7 @@
             <button onclick="addNumber(1)">1</button>
             <button onclick="addNumber(2)">2</button>
             <button onclick="addNumber(3)">3</button>
-            <button class="operator" onclick="addNumber('+')">+</button>
+            <button class="operator" onclick="addNumber('*')">*</button>
             <button onclick="addNumber(0)">0</button>
             <button onclick="addNumber('.')">.</button>
             <button class="operator" onclick="calculate()">=</button>
