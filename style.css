@@ -47,6 +47,13 @@ button {
     cursor: pointer;
 }
 
+#clear{
+    grid-column: span 3;
+}
+#equal{
+    grid-row: span 3;
+  
+}
 button:hover {
     background-color: #e0e0e0;
     transform: scale(1.05);
@@ -60,6 +67,7 @@ button:active {
 button.operator {
     background-color: #ff9500;
     color: #fff;
+
 }
 
 button.operator:hover {
@@ -120,6 +128,7 @@ button {
     user-select: none;
     color:black
 }
+
 
 
 .display {
